@@ -25,7 +25,9 @@ export default class Projects extends React.Component {
                 <h3>Office</h3>
                 <div className="address__body">
                   <h6>Address: </h6>
-                  <div>Plot 4A Olufunsho Ayodle Street, Abule-Egba, lagos.</div>
+                  <div>
+                    Plot 4A Olufunsho Ayodele Street, Abule-Egba, lagos.
+                  </div>
                 </div>
                 <div className="address__body">
                   <h6>Tel: </h6>

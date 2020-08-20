@@ -13,7 +13,7 @@ export default class Background extends React.Component {
       showCursor: false,
       cursorChar: '|',
       startDelay: 500,
-      backDelay: 2000,
+      backDelay: 4000,
       typeSpeed: 400,
       backSpeed: 100,
     });
@@ -27,8 +27,12 @@ export default class Background extends React.Component {
         <div id="stars2" />
         <div id="stars3" />
         <div className="videos">
-          <video src="/Videos/Video-1.mp4" autoPlay muted loop></video>
-          <video src="/Videos/Video-2.mp4" autoPlay muted loop></video>
+          <div>
+            <video src="/Videos/Video-1.mp4" autoPlay muted loop></video>
+          </div>
+          <div>
+            <video src="/Videos/Video-2.mp4" autoPlay muted loop></video>
+          </div>
         </div>
         <div className="top-container flex">
           <h1>
