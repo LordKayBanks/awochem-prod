@@ -1,10 +1,22 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import PropTypes from 'prop-types';
+import { init } from 'ityped';
 
 import WOW from 'wowjs';
 
 export default class Background extends React.Component {
   componentDidMount() {
+    const welcomeText = document.querySelector('#welcome');
+
+    init(welcomeText, {
+      strings: ['Welcome to'],
+      showCursor: false,
+      cursorChar: '|',
+      startDelay: 500,
+      backDelay: 2000,
+      typeSpeed: 400,
+      backSpeed: 100,
+    });
     new WOW.WOW().init();
   }
 
@@ -20,7 +32,7 @@ export default class Background extends React.Component {
         </div>
         <div className="top-container flex">
           <h1>
-            Welcome to
+            <span id="welcome"></span>
             <br />
             AWOCHEM LIMITED
           </h1>

@@ -6,7 +6,7 @@ export default class Contact extends React.Component {
     return (
       <div id="my-contact" className="container text-center my-5">
         <h1 id="contact" className={'mb-3 ' + this.props.fadeInLeft}>
-          Contact us
+          Email us
         </h1>
         <form
           className={this.props.shake}

@@ -99,7 +99,7 @@ class Navbar extends React.Component {
                   }}
                   className="btn-style nav-item nav-link"
                 >
-                  Gallery
+                  Contacts
                 </a>
                 <a
                   onClick={() => {
@@ -107,7 +107,7 @@ class Navbar extends React.Component {
                   }}
                   className="btn-style nav-item nav-link"
                 >
-                  Contact
+                  Email
                 </a>
               </div>
             </div>

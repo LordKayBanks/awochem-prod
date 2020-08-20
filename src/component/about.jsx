@@ -1,175 +1,104 @@
-import React from "react";
-import layers from "../img/layers.png";
-import cogwheel from "../img/cogwheel.png";
-import pen from "../img/pen.png";
-import browser from "../img/browser.png";
-import myImage from "../img/myImage.png";
-import PropTypes from "prop-types";
+import React from 'react';
+import layers from '../img/layers.png';
+import cogwheel from '../img/cogwheel.png';
+import pen from '../img/pen.png';
+import browser from '../img/browser.png';
+import myImage from '../img/myImage.png';
+import PropTypes from 'prop-types';
 
 export default class About extends React.Component {
-	render() {
-		return (
-			<div
-				id="about-container"
-				className="content-containers container text-center mt-5">
-				<h1 id="about" className={this.props.bounceLeft}>
-					About
-				</h1>
-				<div className="row mt-5">
-					<div
-						className={
-							"col-6 col-sm-6 col-md-3 " + this.props.fadeInLeft
-						}>
-						<img src={layers} alt=""/>
-						<h4>Responsive</h4>
-					</div>
-					<div
-						className={
-							"col-6 col-sm-6 col-md-3 " + this.props.fadeInLeft
-						}>
-						<img src={pen} alt=""/>
-						<h4>Design</h4>
-					</div>
-					<div
-						className={
-							"col-6 col-sm-6 col-md-3 " + this.props.fadeInRight
-						}>
-						<img src={cogwheel} alt=""/>
-						<h4>Performance</h4>
-					</div>
-					<div
-						className={
-							"col-6 col-sm-6 col-md-3 " + this.props.fadeInRight
-						}>
-						<img src={browser} alt=""/>
-						<h4>Agile</h4>
-					</div>
-				</div>
+  render() {
+    return (
+      <div
+        id="about-container"
+        className="content-containers container text-center mt-5"
+      >
+        <h1 id="about" className={this.props.bounceLeft}>
+          About
+        </h1>
+        <div className="row mt-5">
+          <div className={'col-6 col-sm-6 col-md-3 ' + this.props.fadeInLeft}>
+            <img src={layers} alt="" />
+            <h4>Responsive</h4>
+          </div>
+          <div className={'col-6 col-sm-6 col-md-3 ' + this.props.fadeInLeft}>
+            <img src={pen} alt="" />
+            <h4>Design</h4>
+          </div>
+          <div className={'col-6 col-sm-6 col-md-3 ' + this.props.fadeInRight}>
+            <img src={cogwheel} alt="" />
+            <h4>Performance</h4>
+          </div>
+          <div className={'col-6 col-sm-6 col-md-3 ' + this.props.fadeInRight}>
+            <img src={browser} alt="" />
+            <h4>Agile</h4>
+          </div>
+        </div>
 
-				<div className="row" style={{ marginTop: 7 + "rem" }}>
-					<div className="col-12 col-lg-6 hidden">
-						<img
-							className={"img-fluid " + this.props.fadeIn}
-							src={myImage}
-							alt=""
-							style={{
-								borderRadius: 50 + "%",
-								height: 250 + "px",
-								width: 250 + "px"
-							}}
-						/>
-						<p className={"mytext pt-3 " + this.props.fadeIn}>
-							I love to transform ideas into reality using code. I
-							am passionate about using Javascript and animations
-							to create awesome user experiences.
-						</p>
-					</div>
-					<div
-						className={
-							"col-12 col-sm-12 col-md-12 col-lg-6 " +
-							this.props.tada
-						}>
-						<div className="progress mb-3">
-							<div
-								className="progress-bar fill-80-bar"
-								role="progressbar"
-								style={{ width: 80 + "%" }}
-								aria-valuemin="0"
-								aria-valuemax="100">
-								HTML5
-							</div>
-						</div>
-						<div className="progress mb-3">
-							<div
-								className="progress-bar fill-80-bar"
-								role="progressbar"
-								style={{ width: 80 + "%" }}
-								aria-valuemin="0"
-								aria-valuemax="100">
-								CSS3
-							</div>
-						</div>
-						<div className="progress mb-3">
-							<div
-								className="progress-bar fill-90-bar"
-								role="progressbar"
-								style={{ width: 90 + "%" }}
-								aria-valuemin="0"
-								aria-valuemax="100">
-								Javascript
-							</div>
-						</div>
-						<div className="progress mb-3">
-							<div
-								className="progress-bar fill-60-bar"
-								role="progressbar"
-								style={{ width: 60 + "%" }}
-								aria-valuemin="0"
-								aria-valuemax="100">
-								PHP
-							</div>
-						</div>
-						<div className="progress mb-3">
-							<div
-								className="progress-bar fill-80-bar"
-								role="progressbar"
-								style={{ width: 80 + "%" }}
-								aria-valuemin="0"
-								aria-valuemax="100">
-								ReactJS
-							</div>
-						</div>
-						<div className="progress mb-3">
-							<div
-								className="progress-bar fill-60-bar"
-								role="progressbar"
-								style={{ width: 60 + "%" }}
-								aria-valuemin="0"
-								aria-valuemax="100">
-								NodeJs
-							</div>
-						</div>
-						<div className="progress mb-3">
-							<div
-								className="progress-bar fill-60-bar"
-								role="progressbar"
-								style={{ width: 60 + "%" }}
-								aria-valuemin="0"
-								aria-valuemax="100">
-								SASS
-							</div>
-						</div>
-						<div className="progress mb-3">
-							<div
-								className="progress-bar fill-80-bar"
-								role="progressbar"
-								style={{ width: 80 + "%" }}
-								aria-valuemin="0"
-								aria-valuemax="100">
-								VanillaJS
-							</div>
-						</div>
-						<div className="progress mb-3">
-							<div
-								className="progress-bar fill-60-bar"
-								role="progressbar"
-								style={{ width: 60 + "%" }}
-								aria-valuemin="0"
-								aria-valuemax="100">
-								JQuery
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		);
-	}
+        <div className="row" style={{ marginTop: 7 + 'rem' }}>
+          <div className="col-12 col-lg-6 hidden">
+            <div className={'about-item mytext pt-3 ' + this.props.fadeIn}>
+              We specialize in the manufacturing of high quality industrial and
+              personal use plastic bags. <br />
+              We produce a wide range of varieties and sizes from the very thin
+              personal shopping bags (.5 mils) to customized industrial plastic
+              bags. <br />
+              We also print custom messages/templates on the plastic bags we
+              produce. Likewise we take printing orders from interested
+              customers.
+            </div>
+          </div>
+          <div
+            className={'col-12 col-sm-12 col-md-12 col-lg-6 ' + this.props.tada}
+          >
+            <div className="services">
+              <h2>Extrusion:</h2>
+              <div className="services__body">
+                As per customer requests and price negotiation, we utilize both
+                virgin and recycled Poly Vinyl Chloride materials to manufacture
+                industrial and personal plastic bags of various dimensions and
+                thickness.
+              </div>
+            </div>
+
+            <div className="services">
+              <h2>Printing:</h2>
+              <div className="services__body">
+                We can print company names, messages, texts and templates and
+                other customer requests on the plastic bags we produce. We
+                likewise take printing orders to print on plastic bags
+                manufactured elsewhere.
+              </div>
+            </div>
+
+            <div className="services">
+              <h2>Cutting:</h2>
+              <div className="services__body">
+                We cut to standard and customized sizes to customers'
+                satisfaction.
+              </div>
+            </div>
+
+            <div className="services">
+              <h2>Other services:</h2>
+              <div className="services__body">
+                <h6>
+                  Packaging and delivery: <br />
+                </h6>
+                We offer flexible packing and delivery within Lagos Mainland.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
 }
 
 About.propTypes = {
-	bounceLeft: PropTypes.string,
-	fadeInLeft: PropTypes.string,
-	fadeInRight: PropTypes.string,
-	fadeIn: PropTypes.string,
-	tada: PropTypes.string
+  bounceLeft: PropTypes.string,
+  fadeInLeft: PropTypes.string,
+  fadeInRight: PropTypes.string,
+  fadeIn: PropTypes.string,
+  tada: PropTypes.string,
 };
