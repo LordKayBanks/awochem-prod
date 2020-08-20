@@ -1,9 +1,9 @@
 import React from 'react';
-import layers from '../img/layers.png';
+import bag from '../img/layers.png';
 import cogwheel from '../img/cogwheel.png';
 import pen from '../img/pen.png';
 import browser from '../img/browser.png';
-import myImage from '../img/myImage.png';
+import factory from '../img/factory.jpeg';
 import PropTypes from 'prop-types';
 
 export default class About extends React.Component {
@@ -18,26 +18,39 @@ export default class About extends React.Component {
         </h1>
         <div className="row mt-5">
           <div className={'col-6 col-sm-6 col-md-3 ' + this.props.fadeInLeft}>
-            <img src={layers} alt="" />
-            <h4>Responsive</h4>
-          </div>
-          <div className={'col-6 col-sm-6 col-md-3 ' + this.props.fadeInLeft}>
             <img src={pen} alt="" />
             <h4>Design</h4>
           </div>
-          <div className={'col-6 col-sm-6 col-md-3 ' + this.props.fadeInRight}>
-            <img src={cogwheel} alt="" />
-            <h4>Performance</h4>
+          <div className={'col-6 col-sm-6 col-md-3 ' + this.props.fadeInLeft}>
+            <img src={bag} alt="" />
+            <h4>Print</h4>
           </div>
           <div className={'col-6 col-sm-6 col-md-3 ' + this.props.fadeInRight}>
             <img src={browser} alt="" />
-            <h4>Agile</h4>
+            <h4>Durable</h4>
+          </div>
+          <div className={'col-6 col-sm-6 col-md-3 ' + this.props.fadeInRight}>
+            <img src={cogwheel} alt="" />
+            <h4>Reliable</h4>
           </div>
         </div>
 
         <div className="row" style={{ marginTop: 7 + 'rem' }}>
           <div className="col-12 col-lg-6 hidden">
-            <div className={'about-item mytext pt-3 ' + this.props.fadeIn}>
+            <img
+              className={'img-fluid ' + this.props.fadeIn}
+              src={factory}
+              alt=""
+              style={{
+                borderRadius: 0.35 + 'rem',
+                // borderRadius: 50 + '%',
+                height: 350 + 'px',
+                width: 350 + 'px',
+                boxShadow: '3px 0px 20px 0px #0000002b',
+              }}
+            />
+            {/* <div className={'about-item mytext pt-3 ' + this.props.fadeIn}> */}
+            <div className={'about-item mytext ' + this.props.fadeIn}>
               We specialize in the manufacturing of high quality industrial and
               personal use plastic bags. <br />
               We produce a wide range of varieties and sizes from the very thin

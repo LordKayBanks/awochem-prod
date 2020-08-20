@@ -17,29 +17,37 @@ export default class Projects extends React.Component {
               Contacts
             </h1>
             <div className="row my-5">
-              <div className={'col-12 col-sm-12 col-md-6 contact-item'}>
+              <div
+                className={
+                  'office-address col-12 col-sm-12 col-md-6 contact-item'
+                }
+              >
                 <h3>Office</h3>
-                <div>
-                  <span>Address: </span>
+                <div className="address__body">
+                  <h6>Address: </h6>
                   <div>Plot 4A Olufunsho Ayodle Street, Abule-Egba, lagos.</div>
                 </div>
-                <div>
-                  <span>Tel: </span>
+                <div className="address__body">
+                  <h6>Tel: </h6>
                   <div>08054528088, 08023220766</div>
                 </div>
-                <div>
-                  <span>Email: </span>
+                <div className="address__body">
+                  <h6>Email: </h6>
                   <div>zac_y56@yahoo.com</div>
                 </div>
               </div>
-              <div className={'col-12 col-sm-12 col-md-6 contact-item'}>
+              <div
+                className={
+                  'factory-address col-12 col-sm-12 col-md-6 contact-item'
+                }
+              >
                 <h3>Factory</h3>
-                <div>
-                  <span>Address: </span>
+                <div className="address__body">
+                  <h6>Address: </h6>
                   <div>27/29 Ahmed Tijani Street, Ahmadiya Lagos.</div>
                 </div>
-                <div>
-                  <span>Tel: </span>
+                <div className="address__body">
+                  <h6>Tel: </h6>
                   <div>NA</div>
                 </div>
               </div>
