@@ -46,6 +46,9 @@ video {
   justify-content: space-between;
 }
 
+.welcome {
+  font-size: 20px;
+}
 .top-container {
   z-index: 10;
 }

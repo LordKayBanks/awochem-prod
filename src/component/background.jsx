@@ -36,7 +36,7 @@ export default class Background extends React.Component {
         </div>
         <div className="top-container flex">
           <h1>
-            <span id="welcome"></span>
+            <span id="welcome" className="welcome"></span>
             <br />
             AWOCHEM LIMITED
           </h1>
